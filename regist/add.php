@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 // POSTデータ取得
-$posts = $_POST;
+$posts = sanitize($_POST);
 // var_dump($posts);
 // exit;
 
