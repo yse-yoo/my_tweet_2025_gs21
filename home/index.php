@@ -2,7 +2,11 @@
 // 共通ファイル app.php を読み込み
 require_once('../app.php');
 
-// TODO: ユーザセッションの確認し、ログインしていない場合はログイン画面にリダイレクト
+// TODO: ユーザセッションを確認し、ログインしていない場合はログイン画面にリダイレクト
+if (!isset($_SESSION[APP_KEY]['auth_user'])) {
+    header('Location: ../login/');
+    exit;
+}
 
 // TODO: セッションからユーザ情報を取得
 $user = [];
