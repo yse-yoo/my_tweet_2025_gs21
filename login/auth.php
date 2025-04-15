@@ -19,6 +19,12 @@ $password = $_POST['password'];
 
 // TODO: ユーザ認証: new User() で auth() を実行
 $auth_user = [];
+// TODO: 仮のユーザIDを設定
+if ($account_name === 'test') {
+    $auth_user['id'] = 1; // 仮のユーザID
+} else {
+    $auth_user['id'] = null;
+}
 
 if (empty($auth_user['id'])) {
     // ログイン失敗時はログイン入力画面にリダイレクト
@@ -27,5 +33,6 @@ if (empty($auth_user['id'])) {
 } else {
     // TODO: 認証成功時はセッションにユーザデータを保存
     // TODO: トップページにリダイレクト
+    header('Location: ../home/');
     exit;
 }
