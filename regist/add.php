@@ -30,6 +30,7 @@ if ($posts['account_name'] === 'test') {
 
 if (empty($auth_user['id'])) {
     // TODO: エラーを APP_KEY > errors > public セッションに保存
+    $_SESSION[APP_KEY]['errors']['public'] = 'ユーザ登録に失敗しました。';
     // TODO: 入力画面(input.php)にリダイレクト
     header('Location: input.php');
     exit;
