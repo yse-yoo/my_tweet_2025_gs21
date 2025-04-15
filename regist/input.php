@@ -13,6 +13,7 @@ $errors = [];
 <html lang="ja">
 
 <!-- TODO: components/head.php を読み込み -->
+<?php include COMPONENT_DIR . 'head.php'; ?>
 
 <body>
     <main id="regist" class="flex justify-center">
