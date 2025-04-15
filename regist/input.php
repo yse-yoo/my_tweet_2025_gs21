@@ -7,6 +7,10 @@ $regist = $_SESSION[APP_KEY]['regist'] ?? [];
 
 // TODO: セッション APP_KEY の errors があれば取得
 $errors = $_SESSION[APP_KEY]['errors'] ?? [];
+// エラーのセッションを消す
+if (isset($errors)) {
+    unset($_SESSION[APP_KEY]['errors']);
+}
 ?>
 
 <!DOCTYPE html>
