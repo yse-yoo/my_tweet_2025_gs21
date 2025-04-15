@@ -17,6 +17,7 @@ $tweets = range(1, 5);
 <html lang="ja">
 
 <!-- TODO: コンポーネント: components/head.php -->
+<?php include COMPONENT_DIR . 'head.php'; ?>
 
 <body>
 
@@ -24,19 +25,20 @@ $tweets = range(1, 5);
 
         <header class="w-1/5 p-3 border-r min-h-screen">
             <!-- TODO: components/nav.php 読み込み -->
-            レイアウト（サイドメニュー）
+            <?php include COMPONENT_DIR . 'nav.php'; ?>
         </header>
 
         <main class="w-4/5 pt-3">
             <div class="row">
                 <!-- TODO: components/tweet_form.php 読み込み -->
-                レイアウト（メインコンテンツ）
+                <?php include COMPONENT_DIR . 'tweet_form.php'; ?>
             </div>
 
             <? if ($tweets) : ?>
                 <?php foreach ($tweets as $value): ?>
                     <div class="row">
                         <!-- TODO: components/tweet.php 読み込み -->
+                        <?php include COMPONENT_DIR . 'tweet.php'; ?>
                     </div>
                 <?php endforeach ?>
             <? endif ?>
