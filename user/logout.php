@@ -7,3 +7,4 @@ if (isset($_SESSION[APP_KEY]['user'])) {
 }
 
 // TODO: ログイン画面にリダイレクト
+header('Location: ../login/');
