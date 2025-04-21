@@ -12,7 +12,8 @@ if (!isset($_SESSION[APP_KEY]['auth_user'])) {
 }
 
 // TODO: セッションからユーザ情報を取得
-$user = [];
+$auth_user = $_SESSION[APP_KEY]['auth_user'];
+// var_dump($auth_user);
 
 // ユーザセッションの取得
 // TODO: Tweet投稿一覧を取得
