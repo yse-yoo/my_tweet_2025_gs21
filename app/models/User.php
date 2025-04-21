@@ -96,8 +96,10 @@ class User
             // ユーザデータ取得
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
             // TODO: ユーザが存在し、password_verify() でパスワードの検証を実施
-            // TODO: ユーザを返す
-            return $user;
+            if ($user && password_verify($password, $user['password'])) {
+                // 認証成功時はユーザデータを返す
+                return $user;
+            }
         } catch (PDOException $e) {
             error_log($e->getMessage());
         }
