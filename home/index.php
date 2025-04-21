@@ -2,6 +2,9 @@
 // 共通ファイル app.php を読み込み
 require_once('../app.php');
 
+// TODO: Tweet モデルの読み込み
+use App\Models\Tweet;
+
 // TODO: ユーザセッションを確認し、ログインしていない場合はログイン画面にリダイレクト
 if (!isset($_SESSION[APP_KEY]['auth_user'])) {
     header('Location: ../login/');
@@ -13,8 +16,8 @@ $user = [];
 
 // ユーザセッションの取得
 // TODO: Tweet投稿一覧を取得
-// ダミーデーター
-$tweets = range(1, 5);
+$tweet = new Tweet();
+$tweets = $tweet->get();
 ?>
 
 <!DOCTYPE html>
