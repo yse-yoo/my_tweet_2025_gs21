@@ -1,4 +1,5 @@
 <?php
+// 設定ファイルを読み込み
 require_once "env.php";
 
 // セッション開始
@@ -30,4 +31,6 @@ require_once LIB_DIR . 'File.php';
 
 // モデルクラスの読み込み
 require_once APP_DIR . 'models/User.php';
+require_once APP_DIR . 'models/AuthUser.php';
 require_once APP_DIR . 'models/Tweet.php';
+require_once APP_DIR . 'models/Like.php';
