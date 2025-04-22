@@ -18,7 +18,7 @@ $auth_user = AuthUser::checkLogin();
 
 // TODO: POSTデータを取得
 $posts = sanitize($_POST);
-var_dump($posts);
+// var_dump($posts);
 
 // TODO: 投稿処理
 $tweet = new Tweet();
