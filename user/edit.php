@@ -37,4 +37,6 @@ $auth_user = $user->find($auth_user['id']);
             </div>
         </main>
     </div>
-    </div>
+</body>
+
+</html>
