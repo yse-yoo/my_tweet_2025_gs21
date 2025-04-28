@@ -7,6 +7,7 @@ use App\Models\Like;
 
 $auth_user = AuthUser::checkLogin();
 
+// $_GET からidを取得
 $id = $_GET['id'] ?? null;
 if (!$id) {
     die('IDが指定されていません。');
