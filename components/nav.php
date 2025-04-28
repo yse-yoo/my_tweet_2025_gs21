@@ -17,7 +17,7 @@ use App\Models\User;
         </li>
         <li>
             <div id="user-menu" class="inline-flex items-center">
-                <img src="<?= User::profileImage($auth_user['profile_image']) ?>" class="rounded-full w-8 h-8">
+                <img src="<?= User::profileImage($auth_user['profile_image']) ?>" class="my-2 rounded-full w-10 h-10">
             </div>
             <!-- ポップアップ（初期状態は非表示） -->
             <div id="user-popup" class="hidden absolute left-0 m-2 w-48 bg-white border border-gray-300 rounded shadow-lg z-10">
