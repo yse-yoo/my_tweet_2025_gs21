@@ -7,6 +7,12 @@
             </a>
         </li>
         <li>
+            <a href="home/grallary.php" class="inline-flex items-center">
+                <img src="svg/camera.svg" class="w-10 mr-2">
+                <span>ギャラリー</span>
+            </a>
+        </li>
+        <li>
             <div id="user-menu" class="inline-flex items-center">
                 <img src="images/me.png" class="rounded-full w-8 h-8">
             </div>

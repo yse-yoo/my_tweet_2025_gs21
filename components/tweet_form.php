@@ -21,7 +21,7 @@ use App\Models\User;
             <!-- SVG アイコンを表示する label -->
             <div>
                 <label for="fileInput" class="cursor-pointer inline-block mt-2">
-                    <img src="svg/camera.svg" class="w-6" alt="">
+                    <img src="svg/image.svg" class="w-6" alt="">
                 </label>
             </div>
             <!-- ポストボタン -->
